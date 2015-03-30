@@ -19,9 +19,13 @@ void flash(int numFlashes, int d)
 {
   for (int i = 0; i < numFlashes; i ++)
   {
-    digitalWrite(ledPin, HIGH);
+    digitalWrite(ledPinyellow, HIGH);
     delay(d+i*500);
-    digitalWrite(ledPin, LOW);
+    digitalWrite(ledPinyellow, LOW);
+    delay(d);
+    digitalWrite(ledPinred, HIGH);
+    delay(d+i*500);
+    digitalWrite(ledPinred, LOW);
     delay(d);
   }
 }
