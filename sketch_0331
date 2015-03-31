@@ -22,6 +22,6 @@ void flash(int numFlashes, int d)
     digitalWrite(ledPin, LOW);
     delay(d);
     ledPin = ledPin-1;
-    if ledPin <12 ledPin = 13;
+    if (ledPin <12) ledPin = 13;
   }
 }
